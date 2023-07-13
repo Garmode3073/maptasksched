@@ -37,7 +37,7 @@ void main() async {
   await AndroidAlarmManager.initialize();
   runApp(const MyApp());
   await AndroidAlarmManager.periodic(
-    const Duration(minutes: 1),
+    const Duration(minutes: 3),
     0,
     callback,
     startAt: DateTime.now(),
